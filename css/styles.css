@@ -12,11 +12,18 @@ h1, h2, h3, p, li{
 
 #sidebar{
   float: left;
-  width: 11.5 em;
+  width: 20%;
   padding-top: 1em;
   padding-right: 0;
   padding-bottom: 1em;
   padding-left: 0;
   background-color: #2E4760;
-  bottom: 100%
+  bottom: 100%;
+  margin: 0;
+
 }
+
+#logo{
+  width: 4em;
+}
+
