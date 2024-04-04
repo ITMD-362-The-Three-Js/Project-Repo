@@ -30,7 +30,7 @@
           </ul>
         </nav>
       </div>
-      <!--Code for logo goes here-->
+      <a href="index.html"><img src="CELogo.png" alt="Logo for Cheat Engine" ></a>
       <h1>Cheat Engine</h1>
       <div id="account">
         <p><a href="registration.html">Login</a></p>
@@ -39,19 +39,22 @@
     </header>
     <div class="info">
       <h2>What is it&#63;</h2>
-      <!--Text for the information-->
+      <p>
+        Cheat Engine is a tool designed to help you with modifying single player games without internet connection so you can make them harder or easier depending on you preference&#44;
+        &#40;e&#46;g&#46;&#58; Find that 100hp is too easy&#44; try playing a game with a max of 1hp&#41;&#44; 
+        but also contains other useful tools to help debigging games and even normal applications&#44; 
+        and helps you protects your sustem by letting you inspect memory modifications by backdoors and even contains some ways to unhide them from conventional means&#46; 
+      </p>
+      <p>
+        It comes with a memory scanner to quickly scan for variables used within a game and allow you to change them&#44; but it also comes with a debugger&#44; disassembler&#44; assembler&#44; speedhack&#44; 
+        trainer maker&#44; direct 3D manipulation tools&#44; system inspection tools and more which are also useful for normal programmers and software analysts&#46;
+      </p>
+      <p>
+        Besides these tools it also comes with extensive scripting support which will allow experienced developers to create their own applications with ease and share them with other people&#46;
+      </p>
     </div>
     <div class="download_button">
       <input type="button" name="download" value="Download" id="downLoad">
-    </div>
-    <div class="warning">
-      <h2>Read before download&#58;</h2>
-      <p>
-        Read before download&#58; You must be 18 years or older&#44; or deemed an adult&#44; to install Cheat Engine&#46;
-        Cheat Engine is for private and educational purposes only&#46;
-        Before you attach Cheat Engine to a process&#44; please make sure that you are not violating EULA&#47; of the specific game&#47;application&#46;
-        cheatengine&#46;org does not condone the illegal use of Cheat Engine&#46;
-      </p>
     </div>
     <div id="latest_version">
       <h2>Latest Version 7&#46;5</h2>
@@ -60,7 +63,7 @@
       <p>Please report bugs and give suggestions to improve Cheat Engine so the next versions can be even greater&#33;</p>
       <div id="latest_changes">
         <h3>Changes&#58;</h3>
-        <ul class="changes">
+        <ul id="changes">
           <li>Removed the driver requirement for the access memory regions tool</li>
           <li>Added 1 byte jmp instructions &#40;that will install an exeption handler and place an int3 at the location&#41;</li>
           <li>Added a scanoption so you can skip unpaged memory&#46; &#40;should prevent targets from eating up RAM when scanned&#41;</li>
@@ -75,6 +78,15 @@
           <li>lua&#58; show a stacktrace on execution error</li>
           <li>lua&#58; added convertTOUTF8&#40;stringbytetable&#44; regioncode&#41;</li>
           <li>made loading CT files with signatures possible under wine and proton</li>
+        </ul>
+      </div>
+      <div id="lates_fixes">
+        <h3>Fixes</h3>
+        <ul id="fixes">
+         <li>vehdebug&#58; Fixed a case where a new thread creation or other event would cause another event that would cause another event that would trigger at exactly the same time to get the exception ignored and just continued</li>
+         <li>monodatacollector&#58; Fixed invoke method</li>
+         <li>dotnetdatacollector&#58; Fixed issues of loading a wrong version of dbgshim&#46;dll</li>
+         <li>fixed disassembling cvtdq2pd</li>
         </ul>
       </div>
     </div>
