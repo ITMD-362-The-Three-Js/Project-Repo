@@ -1,0 +1,53 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+.Field_Input {
+    margin-bottom: 10px;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+    .logo img {
+        max-width: 80px;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 18px;
+    }
+
+    .Field_Input {
+        margin-bottom: 8px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .logo img {
+        max-width: 60px;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 16px;
+    }
+
+    .Field_Input {
+        margin-bottom: 6px;
+    }
+}
