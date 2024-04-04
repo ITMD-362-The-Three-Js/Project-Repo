@@ -1,0 +1,22 @@
+html{
+  background-color: #222426
+}
+
+fieldset{
+  background-color: #2E4760
+}
+
+h1, h2, h3, p, li{
+ color:white
+} 
+
+#sidebar{
+  float: left;
+  width: 11.5 em;
+  padding-top: 1em;
+  padding-right: 0;
+  padding-bottom: 1em;
+  padding-left: 0;
+  background-color: #2E4760;
+  bottom: 100%
+}
