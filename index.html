@@ -37,6 +37,46 @@
         <p><a href="registration.html">Sign Up</a></p>
       </div>
     </header>
-      
+    <div class="info">
+      <h2>What is it&#63;</h2>
+      <!--Text for the information-->
+    </div>
+    <div class="download_button">
+      <input type="button" name="download" value="Download" id="downLoad">
+    </div>
+    <div class="warning">
+      <h2>Read before download&#58;</h2>
+      <p>
+        Read before download&#58; You must be 18 years or older&#44; or deemed an adult&#44; to install Cheat Engine&#46;
+        Cheat Engine is for private and educational purposes only&#46;
+        Before you attach Cheat Engine to a process&#44; please make sure that you are not violating EULA&#47; of the specific game&#47;application&#46;
+        cheatengine&#46;org does not condone the illegal use of Cheat Engine&#46;
+      </p>
+    </div>
+    <div id="latest_version">
+      <h2>Latest Version 7&#46;5</h2>
+      <h3>February 14 2023&#58;</h3>
+      <p>I&#39;m glad to announce the release of Cheat Engine 7&#46;5 which has some really neat improvements over 7&#46;4&#46;</p>
+      <p>Please report bugs and give suggestions to improve Cheat Engine so the next versions can be even greater&#33;</p>
+      <div id="latest_changes">
+        <h3>Changes&#58;</h3>
+        <ul class="changes">
+          <li>Removed the driver requirement for the access memory regions tool</li>
+          <li>Added 1 byte jmp instructions &#40;that will install an exeption handler and place an int3 at the location&#41;</li>
+          <li>Added a scanoption so you can skip unpaged memory&#46; &#40;should prevent targets from eating up RAM when scanned&#41;</li>
+          <li>Reassemble&#40;&#41; now rewrites an instruction using multiple line when needed</li>
+          <li>Maked some error messages more descriptive</li>
+          <li>Added an option to center the highlighted disassembler code to the center</li>
+          <li>Added an exlanation to why the driver won&#39;t load and a link with info on how to get it to load for now</li>
+          <li>Memoryrecord hotkeys can now be disabled individually</li>
+          <li>codefilter&#58; unwind info now gives less bad results</li>
+          <li>Added supprt for pseudo&#8208;ops like cmpss&#47;sd&#47;ps&#47;pd</li>
+          <li>lua&#58; added ceserver commands</li>
+          <li>lua&#58; show a stacktrace on execution error</li>
+          <li>lua&#58; added convertTOUTF8&#40;stringbytetable&#44; regioncode&#41;</li>
+          <li>made loading CT files with signatures possible under wine and proton</li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>
