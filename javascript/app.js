@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const form = document.querySelector('form');
-    
+    var element = document.querySelector('.nojs');
+    element.classList.remove('nojs');
+    element.classList.add('js');
+    const form = document.querySelector('form');    
     form.addEventListener('submit', function(event) {
         event.preventDefault();
 
@@ -26,3 +28,9 @@ document.addEventListener("DOMContentLoaded", function() {
         form.submit();
     });
 });
+function menu(x){
+      x.classList.toggle("change");
+    }
+document.getElementById("toDownload").addEventListener("click", function(){
+        window.location.href = "downloads.html";
+    });

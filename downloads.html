@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" class="nojs">
+<html lang="en" class="hasjs">
   <head>
     <title>Downloads</title>
     <meta charset="utf-8">
     <link rel="stylesheet" media="screen" href="css/meyers_and_normalize-form_reset.css">
     <link rel="stylesheet" media="screen" href="css/styles.css">
+    <script src="javascript/app.js" async></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
@@ -12,16 +13,13 @@
   <body class="audiowide">
     <header>
       <!-- Got the burger menu from W3Schools -->
-      <div class="burger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span> 
+      <div class="burger" onclick="menu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
       </div>
-      <nav>
-      <div class="logo">
-        <a href="index.html"><img src="CELogo.png" alt="Logo for Cheat Engine"></a>
-      </div> 
-      <h1>Downloads</h1>
+      <a href="index.html"><img src="CELogo.png" alt="Logo for Cheat Engine" id="logo"></a>      
+      <nav class="pages">
         <ul>
           <li>Forum</li>
           <li>About Cheat Engine</li>
@@ -37,13 +35,13 @@
           <li>Cheat Engine Wiki</li>
         </ul>
       </nav>
-      <h1>Cheat Engine</h1>
+      <h1 class="name">Cheat Engine</h1>
       <div id="account">
         <p><a href="registration.html">Login</a></p>
         <p><a href="registration.html">Sign Up</a></p>
       </div>
     </header>
-      
+    <h1>Downloads</h1>
     <div class="warning">
       <h2>READ BEFORE DOWNLOAD&#58;</h2>
         <p>
