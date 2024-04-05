@@ -51,3 +51,32 @@ h1, h2, h3, h4, h5, h6 {
         margin-bottom: 6px;
     }
 }
+html{
+  background-color: #222426
+}
+
+fieldset{
+  background-color: #2E4760
+}
+
+h1, h2, h3, p, li{
+ color:white
+} 
+
+#sidebar{
+  float: left;
+  width: 20%;
+  padding-top: 1em;
+  padding-right: 0;
+  padding-bottom: 1em;
+  padding-left: 0;
+  background-color: #2E4760;
+  bottom: 100%;
+  margin: 0;
+
+}
+
+#logo{
+  width: 4em;
+}
+
