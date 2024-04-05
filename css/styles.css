@@ -1,3 +1,6 @@
+.audiowide {
+    font-family: "Audiowide", sans-serif;
+  }
 /* Global styles */
 body {
     font-family: Arial, sans-serif;
@@ -11,7 +14,6 @@ header {
     color: #fff;
     padding: 0.625em;
     display: flex; /* New: Use flexbox layout */
-    flex-direction: column; /* New: Align items vertically */
     width: 20%; /* New: Set sidebar width */
     padding-right: 1.25px; /* New: Add some padding */
 }
