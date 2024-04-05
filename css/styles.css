@@ -3,12 +3,17 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    display: flex; /* New: Use flexbox layout */
 }
 
 header {
     background-color: #333;
     color: #fff;
     padding: 10px;
+    display: flex; /* New: Use flexbox layout */
+    flex-direction: column; /* New: Align items vertically */
+    width: 20%; /* New: Set sidebar width */
+    padding-right: 20px; /* New: Add some padding */
 }
 
 .logo img {
@@ -51,16 +56,17 @@ h1, h2, h3, h4, h5, h6 {
         margin-bottom: 6px;
     }
 }
+
 html{
-  background-color: #222426
+  background-color: #222426;
 }
 
 fieldset{
-  background-color: #2E4760
+  background-color: #2E4760;
 }
 
 h1, h2, h3, p, li{
- color:white
+ color:white;
 } 
 
 #sidebar{
@@ -73,10 +79,8 @@ h1, h2, h3, p, li{
   background-color: #2E4760;
   bottom: 100%;
   margin: 0;
-
 }
 
 #logo{
   width: 4em;
 }
-
