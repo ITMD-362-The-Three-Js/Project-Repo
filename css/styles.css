@@ -1,100 +1,137 @@
 .audiowide{
-    font-family: "Audiowide", sans-serif;
-  }
-  /* Global styles */
-  html{
-    background-color: #222426;
-  }
-  body{
-    font-size: 1.2em;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  h1{
-    padding: 0.25em;
-    color: #95003C;
-    font-size: 4em;
-    padding-bottom: 0.1em;
-  }
-  p{
-    text-align: center;
-    padding-bottom: 0.5em;
-  }
-  header{
-    background-color: #333;
-    color: #fff;
-    padding: 1em;
-    width: 100%;
-    height: 8em;;
-    margin-bottom: 2.5em;;
-  }
-  fieldset{
-    background-color: #2E4760;
-  }
-  #logo{
-    width: 6em;
-    padding-left: 2em;
-    position: relative;
-    right: 1em;
-  }
-  .name{
-    vertical-align: text-top;
-    width: 60%;
-    position: relative;
-    left: 2.6em;
-    top: -1.5em;
-  }
-  #account p{
+  font-family: "Audiowide", sans-serif;
+}
+
+/* Global styles */
+html{
+  background-color: #222426;
+}
+body{
+  font-size: 1.2em;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+h1{
+  padding: 0.25em;
+  color: #0d6ea3;
+  font-size: 4em;
+  padding-bottom: 0.1em;
+}
+p{
+  text-align: center;
+  padding-bottom: 0.5em;
+  color: #fff;
+  font-size: 1em;;
+}
+li{
+  padding-bottom: 0.5em;
+  color: #fff;
+}
+header{
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  width: 100%;
+  height: 8em;;
+  margin-bottom: 2.5em;;
+}
+fieldset{
+  background-color: #2E4760;
+}
+
+/*Header */
+/*Logo Customization*/
+#logo{
+  width: 6em;
+  padding-left: 1em;
+  position: relative;
+  right: 1em;
+}
+/*NO JS*/
+.burger {
+  width: 0;
+}
+.bar1, .bar2, .bar3{
+  width: 0;
+}
+/*HAS JS*/
+/*h1 in header*/
+.hasjs .name{
+  vertical-align: text-top;
+  width: 60%;
+  position: relative;
+  left: 2.6em;
+  top: -1.5em;
+}
+/*Links to Registration*/
+.hasjs #account p{
+font-size: 2em;
+}
+.hasjs #account{
+  width: 20%;
+  position: relative;
+  left: 41.5em;
+  top: -10em;
+}
+/*Moves nav links out of view*/
+.hasjs #pages{
+  transition: none;
+  opacity: 0;
+  position: absolute;
+  top: auto;
+  left: -50%;
+}
+/*The Burger Menu*/
+.hasjs .burger{
+  width: 4em;
+  height: 4em;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  right: 0.5em;
+  top: -1em;
+  padding-right: 1em;
+}
+/*Bars in the burger*/
+.hasjs .bar1, .hasjs .bar2, .hasjs .bar3{
+  width: 100%;
+  height: 0.5em;
+  background-color: black;
+  margin: 0.7em;
+  transition: 0.4s;
+}
+/*How Bars will look after being clicked*/
+.change .bar1{
+  transform: translate(0, 0.5em) rotate(-45deg);
+}
+.change .bar2{opacity: 0;}
+.change .bar3{
+  transform: translate(0, -1.7em) rotate(45deg);
+}
+/*Naviagtion after burger changed*/
+.hasjs .change #pages{
+  width: 75%;
+  opacity: 100%;
+  left: 0;
+  height: 100%;
+  top: 10em;
+  background-color: black;
+}
+.hasjs #down .change #pages{
+  height: auto;
+}
+#down .change #pages li{
+  padding: 1.75em;
+  font-size: 2.25em;
+}
+.change #pages li{
+  padding: 1.6em;
   font-size: 2em;
-  }
-  #account{
-    width: 20%;
-    position: relative;
-    left: 41.5em;
-    top: -10em;
-  }
-  .hasjs .pages{
-    transition: none;
-    opacity: 0;
-    position: absolute;
-    top: auto;
-    left: -50%;
-  }
-  .burger{
-    width: 4em;
-    height: 4em;
-    display: inline-block;
-    cursor: pointer;
-    position: relative;
-    right: 0.5em;
-    top: -1em;
-  }
-  .bar1, .bar2, .bar3{
-    width: 100%;
-    height: 0.5em;
-    background-color: black;
-    margin: 0.7em;
-    transition: 0.4s;
-  }
-  .change .bar1{
-    transform: translate(0, 0.5em) rotate(-45deg);
-  }
-  .change .bar2{opacity: 0;}
-  .change .bar3{
-    transform: translate(0, -1.7em) rotate(45deg);
-  }
-  #sidebar{
-    float: left;
-    width: 20%;
-    padding-top: 1em;
-    padding-right: 0;
-    padding-bottom: 1em;
-    padding-left: 0;
-    background-color: #2E4760;
-    bottom: 100%;
-    margin: 0;
-  }
-  .Field_Input {
-    margin-bottom: 0.625em;
-  }
+}
+#account p{
+  font-size: 2em;
+}
+.Field_Input {
+  margin-bottom: 0.625em;
+}
