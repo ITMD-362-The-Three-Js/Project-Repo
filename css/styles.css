@@ -114,7 +114,7 @@ font-size: 2em;
   width: 75%;
   opacity: 100%;
   left: 0;
-  height: 100%;
+  height: auto%;
   top: 10em;
   background-color: black;
 }
