@@ -5,6 +5,7 @@
     <meta charset="utf-8" >
     <link rel="stylesheet" media="screen" href="css/meyers_and_normalize-form_reset.css">
     <link rel="stylesheet" media="screen" href="css/styles.css">
+    <script src="javascript/app.js" async></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
@@ -13,11 +14,13 @@
     <header>
       <!-- Got the burger menu from W3Schools -->
       <div class="burger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <nav class="pages">
-          <a href="index.html"><img src="CELogo.png" alt="Logo for Cheat Engine" id="logo"></a>
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <a href="index.html"><img src="CELogo.png" alt="Logo for Cheat Engine" id="logo"></a>
+      <div class="burgered">
+        <nav id="pages">
           <ul>
             <li>Forum</li>
             <li>About Cheat Engine</li>
@@ -34,14 +37,17 @@
           </ul>
         </nav>
       </div>
-      <h1>Cheat Engine</h1>
+      <h1 class="name">Cheat Engine</h1>
       <div id="account">
         <p><a href="registration.html">Login</a></p>
         <p><a href="registration.html">Sign Up</a></p>
       </div>
     </header>
+    <div class="download_button">
+      <button id="toDownload">Download</button>
+    </div>
     <div class="info">
-      <h2>What is it&#63;</h2>
+      <h1>What is it&#63;</h1>
       <p>
         Cheat Engine is a tool designed to help you with modifying single player games without internet connection so you can make them harder or easier depending on you preference&#44;
         &#40;e&#46;g&#46;&#58; Find that 100hp is too easy&#44; try playing a game with a max of 1hp&#41;&#44; 
@@ -55,40 +61,6 @@
       <p>
         Besides these tools it also comes with extensive scripting support which will allow experienced developers to create their own applications with ease and share them with other people&#46;
       </p>
-    </div>
-    <div id="latest_version">
-      <h2>Latest Version 7&#46;5</h2>
-      <h3>February 14 2023&#58;</h3>
-      <p>I&#39;m glad to announce the release of Cheat Engine 7&#46;5 which has some really neat improvements over 7&#46;4&#46;</p>
-      <p>Please report bugs and give suggestions to improve Cheat Engine so the next versions can be even greater&#33;</p>
-      <div id="latest_changes">
-        <h3>Changes&#58;</h3>
-        <ul id="changes">
-          <li>Removed the driver requirement for the access memory regions tool</li>
-          <li>Added 1 byte jmp instructions &#40;that will install an exeption handler and place an int3 at the location&#41;</li>
-          <li>Added a scanoption so you can skip unpaged memory&#46; &#40;should prevent targets from eating up RAM when scanned&#41;</li>
-          <li>Reassemble&#40;&#41; now rewrites an instruction using multiple line when needed</li>
-          <li>Maked some error messages more descriptive</li>
-          <li>Added an option to center the highlighted disassembler code to the center</li>
-          <li>Added an exlanation to why the driver won&#39;t load and a link with info on how to get it to load for now</li>
-          <li>Memoryrecord hotkeys can now be disabled individually</li>
-          <li>codefilter&#58; unwind info now gives less bad results</li>
-          <li>Added supprt for pseudo&#8208;ops like cmpss&#47;sd&#47;ps&#47;pd</li>
-          <li>lua&#58; added ceserver commands</li>
-          <li>lua&#58; show a stacktrace on execution error</li>
-          <li>lua&#58; added convertTOUTF8&#40;stringbytetable&#44; regioncode&#41;</li>
-          <li>made loading CT files with signatures possible under wine and proton</li>
-        </ul>
-      </div>
-      <div id="lates_fixes">
-        <h3>Fixes</h3>
-        <ul id="fixes">
-         <li>vehdebug&#58; Fixed a case where a new thread creation or other event would cause another event that would cause another event that would trigger at exactly the same time to get the exception ignored and just continued</li>
-         <li>monodatacollector&#58; Fixed invoke method</li>
-         <li>dotnetdatacollector&#58; Fixed issues of loading a wrong version of dbgshim&#46;dll</li>
-         <li>fixed disassembling cvtdq2pd</li>
-        </ul>
-      </div>
     </div>
   </body>
 </html>
