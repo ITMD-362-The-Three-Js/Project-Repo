@@ -39,7 +39,10 @@ header{
 fieldset{
   background-color: #2E4760;
 }
-
+/*Making the links a different color so that they know they are links*/
+a{
+  color:#1a828b;
+}
 /*Header */
 /*Logo Customization*/
 #logo{
