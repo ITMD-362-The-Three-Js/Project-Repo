@@ -129,6 +129,10 @@ font-size: 2em;
   padding: 1.6em;
   font-size: 2em;
 }
+/*Code for when mouse is over nav*/
+.change #pages li:hover{
+  background-color:#222426;
+}
 #account p{
   font-size: 2em;
 }
