@@ -43,6 +43,9 @@ fieldset{
 a{
   color:#1a828b;
 }
+.info{
+  padding-left: 2em;
+}
 /*Header */
 /*Logo Customization*/
 #logo{
@@ -120,6 +123,7 @@ font-size: 2em;
   height: auto;
   top: 10em;
   background-color: black;
+  z-index: 100;
 }
 .hasjs #down .change #pages{
   height: auto;
@@ -135,6 +139,29 @@ font-size: 2em;
 /*Code for when mouse is over nav*/
 .change #pages li:hover{
   background-color:#222426;
+}
+/*Centering h1 in index to the middle*/
+.info h1{
+  text-align: center;
+}
+.info p{
+  padding-bottom: 5em;
+  padding-top: 2.5em;
+}
+/*Code for button in index*/
+#toDownload{
+  color: #fff;
+  background-color: #0d6ea3;
+  border: none;
+  padding: 1em;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  border-radius: 25px;
+  position: relative;
+  width: 75%;
+  font-size: 2.5em;
+  left: 15%;
 }
 #account p{
   font-size: 2em;
