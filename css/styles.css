@@ -22,7 +22,7 @@ p{
   text-align: center;
   padding-bottom: 0.5em;
   color: #fff;
-  font-size: 1em;;
+  font-size: 1em;
 }
 li{
   padding-bottom: 0.5em;
@@ -147,6 +147,14 @@ font-size: 2em;
 .info p{
   padding-bottom: 5em;
   padding-top: 2.5em;
+  line-height: 4em;
+}
+.warning h2{
+  width: fit-content;
+  background-color: yellow;
+}
+.warning p{
+  line-height: 2em;
 }
 /*Code for button in index*/
 #toDownload{
