@@ -36,9 +36,6 @@ header{
   height: 8em;;
   margin-bottom: 2.5em;;
 }
-fieldset{
-  background-color: #2E4760;
-}
 /*Making the links a different color so that they know they are links*/
 a{
   color:#1a828b;
@@ -149,12 +146,19 @@ font-size: 2em;
   padding-top: 2.5em;
   line-height: 4em;
 }
+#downloads{
+  position: relative;
+  bottom: 0.5em;
+}
 .warning h2{
   width: fit-content;
   background-color: yellow;
+  margin-bottom: 1em;
+  margin-top: .5em;
 }
 .warning p{
   line-height: 2em;
+  margin-bottom: 2em;
 }
 /*Code for button in index*/
 #toDownload{
@@ -171,9 +175,93 @@ font-size: 2em;
   font-size: 2.5em;
   left: 15%;
 }
+#windows{
+  color: #fff;
+  background-color: #2391cc;
+  border: none;
+  padding: 1em;
+  margin-top: 0.5em;
+  margin-bottom: 1.5em;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  border-radius: 25px;
+  position: relative;
+  width: 75%;
+  font-size: 2.5em;
+  left: 15%;
+}
+#macOS{
+  color: #fff;
+  background-color: #738791;
+  border: none;
+  padding: 1em;
+  margin-bottom: 1.5em;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  border-radius: 25px;
+  position: relative;
+  width: 75%;
+  font-size: 2.5em;
+  left: 15%;
+}
 #account p{
   font-size: 2em;
 }
+
+/*Registration Page*/
+fieldset{
+  background-color: #2E4760;
+  width: 100%;
+  border-color: #0d6ea3;
+}
 .Field_Input {
-  margin-bottom: 0.625em;
+  margin-top: 2em;
+}
+label{
+  font-size: 2.5em;
+  margin-right: .25em;
+}
+input{
+  font-size: 2.25em;
+}
+fieldset h2{
+  font-size: 4em;
+}
+#email input{
+  position: relative;
+  left: 0.25em;
+}
+#username input{
+  position: relative;
+  left: 3.2em;
+}
+#password input{
+  position: relative;
+  left: 3.25em;
+}
+#checkbox input{
+  height: 1em;
+  width: 1em;
+  margin-right: 0.5em;
+}
+/*Button to Register*/
+.newUser{
+  margin-top: 2em;
+}
+#register{
+  color: #fff;
+  background-color: #0d6ea3;
+  border: none;
+  padding: 1em;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  border-radius: 25px;
+  position: relative;
+  width: 50%;
+  font-size: 2em;
+  left: 25%;
+  margin-bottom: 0.5em;
 }
