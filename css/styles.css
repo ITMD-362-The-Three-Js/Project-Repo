@@ -15,14 +15,14 @@ body{
 h1{
   padding: 0.25em;
   color: #0d6ea3;
-  font-size: 4em;
+  font-size: 5em;
   padding-bottom: 0.1em;
 }
 p{
   text-align: center;
   padding-bottom: 0.5em;
   color: #fff;
-  font-size: 1em;
+  font-size: 1.75em;
 }
 li{
   padding-bottom: 0.5em;
@@ -32,7 +32,7 @@ header{
   background-color: #333;
   color: #fff;
   padding: 1em;
-  width: 100%;
+  width: 97.3%;
   height: 8em;;
   margin-bottom: 2.5em;;
 }
@@ -46,10 +46,10 @@ a{
 /*Header */
 /*Logo Customization*/
 #logo{
-  width: 6em;
+  width: 8em;
   padding-left: 1em;
   position: relative;
-  right: 1em;
+  left: 1em;
 }
 /*NO JS*/
 .burger {
@@ -64,18 +64,18 @@ a{
   vertical-align: text-top;
   width: 60%;
   position: relative;
-  left: 2.6em;
+  left: 3.5em;
   top: -1.5em;
 }
 /*Links to Registration*/
 .hasjs #account p{
-font-size: 2em;
+font-size: 3em;
 }
 .hasjs #account{
   width: 20%;
   position: relative;
-  left: 41.5em;
-  top: -10em;
+  left: 59em;
+  bottom: 15em;
 }
 /*Moves nav links out of view*/
 .hasjs #pages{
@@ -87,8 +87,8 @@ font-size: 2em;
 }
 /*The Burger Menu*/
 .hasjs .burger{
-  width: 4em;
-  height: 4em;
+  width: 6em;
+  height: 5em;
   display: inline-block;
   cursor: pointer;
   position: relative;
@@ -99,7 +99,7 @@ font-size: 2em;
 /*Bars in the burger*/
 .hasjs .bar1, .hasjs .bar2, .hasjs .bar3{
   width: 100%;
-  height: 0.5em;
+  height: 0.75em;
   background-color: black;
   margin: 0.7em;
   transition: 0.4s;
@@ -110,7 +110,7 @@ font-size: 2em;
 }
 .change .bar2{opacity: 0;}
 .change .bar3{
-  transform: translate(0, -1.7em) rotate(45deg);
+  transform: translate(0, -2.25em) rotate(45deg);
 }
 /*Naviagtion after burger changed*/
 .hasjs .change #pages{
@@ -130,7 +130,7 @@ font-size: 2em;
   font-size: 2.25em;
 }
 .change #pages li{
-  padding: 1.6em;
+  padding: 1em;
   font-size: 2em;
 }
 /*Code for when mouse is over nav*/
@@ -144,7 +144,6 @@ font-size: 2em;
 .info p{
   padding-bottom: 1em;
   padding-top: 0.5em;
-  font-size: 2em;
   line-height: 2.25em;
 }
 #downloads{
@@ -156,6 +155,7 @@ font-size: 2em;
   background-color: yellow;
   margin-bottom: 1em;
   margin-top: .5em;
+  font-size: 3em;
 }
 .warning p{
   line-height: 2em;
@@ -173,9 +173,9 @@ font-size: 2em;
   text-align: center;
   border-radius: 50px;
   position: relative;
-  width: 75%;
-  font-size: 2.5em;
-  left: 15%;
+  width: 50%;
+  font-size: 2em;
+  left: 25%;
 }
 #windows{
   color: #fff;
@@ -189,9 +189,9 @@ font-size: 2em;
   text-align: center;
   border-radius: 25px;
   position: relative;
-  width: 75%;
-  font-size: 2.5em;
-  left: 15%;
+  width: 50%;
+  font-size: 2em;
+  left: 25%;
 }
 #macOS{
   color: #fff;
@@ -204,9 +204,9 @@ font-size: 2em;
   text-align: center;
   border-radius: 25px;
   position: relative;
-  width: 75%;
-  font-size: 2.5em;
-  left: 15%;
+  width: 50%;
+  font-size: 2em;
+  left: 25%;
 }
 #account p{
   font-size: 2em;
@@ -215,25 +215,25 @@ font-size: 2em;
 /*Registration Page*/
 fieldset{
   background-color: #2E4760;
-  width: 100%;
+  width: 98%;
   border-color: #0d6ea3;
-  height: 75em;
+  height: auto;
 }
 .Field_Input {
   margin-top: 2em;
 }
 label{
-  font-size: 4em;
+  font-size: 2.5em;
   margin-right: .25em;
 }
 input{
-  font-size: 3em;
+  font-size: 2em;
   margin-top: 1em;
   font-family: "Audiowide", sans-serif;
   color: black;
 }
 fieldset h2{
-  font-size: 7em;
+  font-size: 3em;
 }
 #email input{
   position: relative;
@@ -241,20 +241,23 @@ fieldset h2{
 }
 #username input{
   position: relative;
-  left: 0.2em;
+  left: 0.8em;
 }
 #password input{
   position: relative;
-  left: 0.25em;
+  left: 1em;
 }
 #checkbox input{
-  height: 1em;
-  width: 1em;
+  height: .75em;
+  width: .75em;
   margin-right: 0.5em;
+}
+#checkbox label{
+  font-size: 2em;
 }
 /*Button to Register*/
 .newUser{
-  margin-top: 2em;
+  margin-top: 1.5em;
 }
 #register{
   color: #fff;
@@ -266,8 +269,8 @@ fieldset h2{
   text-align: center;
   border-radius: 50px;
   position: relative;
-  width: 50%;
-  font-size: 2em;
-  left: 25%;
+  width: 25%;
+  font-size:1em;
+  left: 35%;
   margin-bottom: 0.5em;
 }
