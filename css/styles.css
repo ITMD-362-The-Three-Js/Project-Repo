@@ -274,3 +274,12 @@ fieldset h2{
   left: 35%;
   margin-bottom: 0.5em;
 }
+#register:hover, #toDownload:hover{
+  background-color: #094566;
+}
+#macOS:hover{
+  background-color: #404a50;
+}
+#windows:hover{
+  background-color: #144e6d;
+}
