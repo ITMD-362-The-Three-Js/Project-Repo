@@ -274,6 +274,7 @@ fieldset h2{
   left: 35%;
   margin-bottom: 0.5em;
 }
+/*Hover over Buttons*/
 #register:hover, #toDownload:hover{
   background-color: #094566;
 }
@@ -282,4 +283,95 @@ fieldset h2{
 }
 #windows:hover{
   background-color: #144e6d;
+}
+/*Media Quiery for 1024px*/
+@media screen and (max-width: 1024px) {
+  h1{
+    font-size: 3.5em;
+  }
+  p{
+    font-size: 1.5em;
+  }
+  header{
+    height: 5em;
+    width: auto;
+    margin-bottom: 0.5em;
+  }
+  .hasjs .burger{
+    width: 3em;
+    height: 3.25em;
+    left: 0.5em;
+  }
+  .hasjs .bar1, .hasjs .bar2, .hasjs .bar3{
+    height: 0.45em;
+  }
+  #logo{
+    width: 5em;
+    left: 1.75em;
+  }
+  .hasjs .name{
+    left: 3.75em;
+  }
+  .hasjs #account{
+    left: 42.5em;
+    bottom: 9em;
+  }
+  .hasjs #account p{
+    font-size: 1.5em;
+  }
+  .info{
+    width: 38em;;
+  }
+  .info h1{
+    width: 60%;
+    position: relative;
+    left: 4em;
+  }
+  .info p{
+    width: 33em;
+  }
+  .hasjs .change #pages{
+    width: 25em;
+    top: 7em;
+  }
+  .change #pages li{
+    font-size: 1.6em;
+  }
+  .change .bar3{
+    transform: translate(0,-1.75em) rotate(45deg);
+  }
+  #toDownload{
+    padding: 0.25em;
+    width:10em;
+    left: 8.55em;
+  }
+  .warning h2{
+    font-size: 2.25em;
+  }
+  .warning p{
+    line-height: 1.5em;
+    margin-bottom: 1em;
+  }
+  #windows, #macOS{
+    padding: 0.5em;
+    width: 12em;
+    left:8.55em
+  }
+  #downloads{
+    margin-top: 0.75em;
+  }
+  #username input{
+    left: 3.55em;
+  }
+  #why{
+    line-height: 1.5em;
+  }
+  #password input{
+    left: 3.55em;
+  }
+  #register{
+    padding: 0.5em;
+    width: 13em;
+
+  }
 }
