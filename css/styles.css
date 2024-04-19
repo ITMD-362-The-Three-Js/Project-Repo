@@ -114,7 +114,7 @@ font-size: 3em;
 }
 /*Naviagtion after burger changed*/
 .hasjs .change #pages{
-  width: 75%;
+  width: 25em;
   opacity: 100%;
   left: 0;
   height: auto;
@@ -131,7 +131,7 @@ font-size: 3em;
 }
 .change #pages li{
   padding: 1em;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 /*Code for when mouse is over nav*/
 .change #pages li:hover{
@@ -294,7 +294,7 @@ fieldset h2{
   }
   header{
     height: 5em;
-    width: auto;
+    width: 52em;
     margin-bottom: 0.5em;
   }
   .hasjs .burger{
