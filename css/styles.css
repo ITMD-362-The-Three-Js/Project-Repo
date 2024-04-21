@@ -8,21 +8,18 @@ html{
 }
 body{
   font-size: 1.2em;
-  width: 100%;
-  margin: 0;
-  padding: 0;
 }
 h1{
   padding: 0.25em;
   color: #0d6ea3;
-  font-size: 5em;
+  font-size: 4em;
   padding-bottom: 0.1em;
 }
 p{
   text-align: center;
   padding-bottom: 0.5em;
   color: #fff;
-  font-size: 1.75em;
+  font-size: 1.5em;
 }
 li{
   padding-bottom: 0.5em;
@@ -32,24 +29,20 @@ header{
   background-color: #333;
   color: #fff;
   padding: 1em;
-  width: 97.3%;
-  height: 8em;;
+  height: 3em;;
   margin-bottom: 2.5em;;
 }
 /*Making the links a different color so that they know they are links*/
 a{
   color:#1a828b;
 }
-.info{
-  padding-left: 2em;
-}
 /*Header */
 /*Logo Customization*/
 #logo{
-  width: 8em;
-  padding-left: 1em;
+  width: 5em;
   position: relative;
-  left: 1em;
+  left: 5em;
+  bottom: 1em;
 }
 /*NO JS*/
 .burger {
@@ -64,18 +57,18 @@ a{
   vertical-align: text-top;
   width: 60%;
   position: relative;
-  left: 3.5em;
-  top: -1.5em;
+  left: 6em;
+  bottom: 1.75em;
 }
 /*Links to Registration*/
 .hasjs #account p{
-font-size: 3em;
+font-size: 1.5em;
 }
 .hasjs #account{
   width: 20%;
   position: relative;
-  left: 59em;
-  bottom: 15em;
+  left: 61em;
+  bottom: 11em;
 }
 /*Moves nav links out of view*/
 .hasjs #pages{
@@ -87,8 +80,8 @@ font-size: 3em;
 }
 /*The Burger Menu*/
 .hasjs .burger{
-  width: 6em;
-  height: 5em;
+  width: 4em;
+  height: fit-content;
   display: inline-block;
   cursor: pointer;
   position: relative;
@@ -99,7 +92,7 @@ font-size: 3em;
 /*Bars in the burger*/
 .hasjs .bar1, .hasjs .bar2, .hasjs .bar3{
   width: 100%;
-  height: 0.75em;
+  height: 0.5em;
   background-color: black;
   margin: 0.7em;
   transition: 0.4s;
@@ -110,7 +103,7 @@ font-size: 3em;
 }
 .change .bar2{opacity: 0;}
 .change .bar3{
-  transform: translate(0, -2.25em) rotate(45deg);
+  transform: translate(0, -1.75em) rotate(45deg);
 }
 /*Naviagtion after burger changed*/
 .hasjs .change #pages{
@@ -118,7 +111,7 @@ font-size: 3em;
   opacity: 100%;
   left: 0;
   height: auto;
-  top: 10em;
+  top: 5em;
   background-color: black;
   z-index: 100;
 }
@@ -131,15 +124,20 @@ font-size: 3em;
 }
 .change #pages li{
   padding: 1em;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 /*Code for when mouse is over nav*/
 .change #pages li:hover{
   background-color:#222426;
 }
+.info{
+  padding-left: 2em;
+}
 /*Centering h1 in index to the middle*/
 .info h1{
-  text-align: center;
+  width: fit-content;
+  position: relative;
+  left: 6.5em;
 }
 .info p{
   padding-bottom: 1em;
@@ -159,54 +157,54 @@ font-size: 3em;
 }
 .warning p{
   line-height: 2em;
-  margin-bottom: 2em;
+  margin-bottom: 1.5em;
 }
 /*Code for button in index*/
 #toDownload{
   color: #fff;
   background-color: #0d6ea3;
   border: none;
-  padding: 0.75em;
+  padding: 0.5em;
   margin-bottom: 1em;
   text-decoration: none;
   display: inline-block;
   text-align: center;
   border-radius: 50px;
   position: relative;
-  width: 50%;
+  width: 10em;
   font-size: 2em;
-  left: 25%;
+  left: 14.5em;
 }
 #windows{
   color: #fff;
   background-color: #2391cc;
   border: none;
-  padding: 1em;
-  margin-top: 0.5em;
+  padding: 0.6em;
+  margin-top: 0.6em;
   margin-bottom: 1.5em;
   text-decoration: none;
   display: inline-block;
   text-align: center;
   border-radius: 25px;
   position: relative;
-  width: 50%;
+  width: 10em;
   font-size: 2em;
-  left: 25%;
+  left: 5em;
 }
 #macOS{
   color: #fff;
   background-color: #738791;
   border: none;
-  padding: 1em;
-  margin-bottom: 1.5em;
+  padding: 0.6em;
   text-decoration: none;
   display: inline-block;
   text-align: center;
   border-radius: 25px;
   position: relative;
-  width: 50%;
+  width: 10em;
   font-size: 2em;
-  left: 25%;
+  left: 20em;
+  bottom: 3.75em;
 }
 #account p{
   font-size: 2em;
@@ -263,14 +261,14 @@ fieldset h2{
   color: #fff;
   background-color: #0d6ea3;
   border: none;
-  padding: 1em;
+  padding: 0.75em;
   text-decoration: none;
   display: inline-block;
   text-align: center;
   border-radius: 50px;
   position: relative;
-  width: 25%;
-  font-size:1em;
+  width: fit-content;
+  font-size: 1.5em;
   left: 35%;
   margin-bottom: 0.5em;
 }
@@ -283,6 +281,9 @@ fieldset h2{
 }
 #windows:hover{
   background-color: #144e6d;
+}
+#why{
+  line-height: 1.5em;
 }
 /*Media Quiery for 1024px*/
 @media screen and (max-width: 1024px) {
@@ -306,7 +307,6 @@ fieldset h2{
     height: 0.45em;
   }
   #logo{
-    width: 5em;
     left: 1.75em;
   }
   .hasjs .name{
