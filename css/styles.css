@@ -274,3 +274,37 @@ fieldset h2{
   left: 35%;
   margin-bottom: 0.5em;
 }
+/* Media Queries for Tablets (Medium Devices) */
+@media (max-width: 768px) {
+  body {
+      font-size: 1em; /* Smaller text for smaller screens */
+  }
+  h1 {
+      font-size: 3em; /* Adjust header size */
+      padding: 0.25em;
+  }
+  header {
+      height: auto;
+      padding: 0.5em;
+  }
+  .hasjs #account {
+      width: 100%; /* Full width for smaller screens */
+      position: static;
+      margin-bottom: 1em;
+  }
+  #logo {
+      width: 6em; /* Smaller logo */
+  }
+  .info h1, .info p {
+      padding-left: 0.5em;
+      padding-right: 0.5em;
+  }
+  #toDownload, #windows, #macOS {
+      width: 80%; /* Larger button for easier click */
+      left: 10%;
+  }
+  #register {
+      width: 50%;
+      left: 25%;
+  }
+}
