@@ -308,3 +308,37 @@ fieldset h2{
       left: 25%;
   }
 }
+/* Media Queries for Smartphones (Small Devices) */
+@media (max-width: 480px) {
+  body {
+      font-size: 0.9em; /* Even smaller text for tiny screens */
+  }
+  h1 {
+      font-size: 2.5em; /* Adjust header size more */
+  }
+  header {
+      padding: 0.25em;
+  }
+  .hasjs #account p {
+      font-size: 2.5em; /* Adjust login link size */
+  }
+  .hasjs .burger {
+      width: 4em; /* Smaller burger menu */
+  }
+  .hasjs .bar1, .hasjs .bar2, .hasjs .bar3 {
+      height: 0.5em; /* Thinner bars in burger menu */
+  }
+  #toDownload, #windows, #macOS {
+      font-size: 1.5em; /* Smaller text on buttons */
+      padding: 0.5em;
+  }
+  fieldset {
+      padding: 0.5em;
+  }
+  label, input {
+      font-size: 1.5em;
+  }
+  #register {
+      font-size: 1.2em; /* Smaller register button text */
+  }
+}
