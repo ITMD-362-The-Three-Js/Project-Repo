@@ -204,7 +204,7 @@ font-size: 1.5em;
   width: 10em;
   font-size: 2em;
   left: 20em;
-  bottom: 3.75em;
+  bottom: 5em;
 }
 #account p{
   font-size: 2em;
@@ -272,72 +272,6 @@ fieldset h2{
   left: 35%;
   margin-bottom: 0.5em;
 }
-/* Media Queries for Tablets (Medium Devices) */
-@media (max-width: 768px) {
-  body {
-      font-size: 1em; /* Smaller text for smaller screens */
-  }
-  h1 {
-      font-size: 3em; /* Adjust header size */
-      padding: 0.25em;
-  }
-  header {
-      height: auto;
-      padding: 0.5em;
-  }
-  .hasjs #account {
-      width: 100%; /* Full width for smaller screens */
-      position: static;
-      margin-bottom: 1em;
-  }
-  #logo {
-      width: 6em; /* Smaller logo */
-  }
-  .info h1, .info p {
-      padding-left: 0.5em;
-      padding-right: 0.5em;
-  }
-  #toDownload, #windows, #macOS {
-      width: 80%; /* Larger button for easier click */
-      left: 10%;
-  }
-  #register {
-      width: 50%;
-      left: 25%;
-  }
-}
-/* Media Queries for Smartphones (Small Devices) */
-@media (max-width: 480px) {
-  body {
-      font-size: 0.9em; /* Even smaller text for tiny screens */
-  }
-  h1 {
-      font-size: 2.5em; /* Adjust header size more */
-  }
-  header {
-      padding: 0.25em;
-  }
-  .hasjs #account p {
-      font-size: 2.5em; /* Adjust login link size */
-  }
-  .hasjs .burger {
-      width: 4em; /* Smaller burger menu */
-  }
-  .hasjs .bar1, .hasjs .bar2, .hasjs .bar3 {
-      height: 0.5em; /* Thinner bars in burger menu */
-  }
-  #toDownload, #windows, #macOS {
-      font-size: 1.5em; /* Smaller text on buttons */
-      padding: 0.5em;
-  }
-  fieldset {
-      padding: 0.5em;
-  }
-  label, input {
-      font-size: 1.5em;
-  }
-  #register {
-      font-size: 1.2em; /* Smaller register button text */
 /*Hover over Buttons*/
 #register:hover, #toDownload:hover{
   background-color: #094566;
@@ -374,9 +308,11 @@ fieldset h2{
   }
   #logo{
     left: 1.75em;
+    bottom: 0;
   }
   .hasjs .name{
     left: 3.75em;
+    bottom: 1.5em
   }
   .hasjs #account{
     left: 42.5em;
@@ -423,6 +359,10 @@ fieldset h2{
     width: 12em;
     left:8.55em
   }
+  #macOS{
+    top: 0.1em;
+    margin-bottom: 1.5em;
+  }
   #downloads{
     margin-top: 0.75em;
   }
@@ -438,8 +378,73 @@ fieldset h2{
   #register{
     padding: 0.5em;
     width: 13em;
-
   }
 }
+/* Media Queries for Tablets (Medium Devices) */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 1em; /* Smaller text for smaller screens */
+  }
+  h1 {
+    font-size: 3em; /* Adjust header size */
+    padding: 0.25em;
+  }
+  header {
+    height: auto;
+    padding: 0.5em;
+  }
+  .hasjs #account {
+    width: 100%; /* Full width for smaller screens */
+    position: static;
+    margin-bottom: 1em;
+  }
+  #logo {
+    width: 6em; /* Smaller logo */
+  }
+  .info h1, .info p {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+  #toDownload, #windows, #macOS {
+    width: 80%; /* Larger button for easier click */
+    left: 10%;
+  }
+  #register {
+    width: 50%;
+    left: 25%;
+  }
 }
+/* Media Queries for Smartphones (Small Devices) */
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 0.9em; /* Even smaller text for tiny screens */
+  }
+  h1 {
+    font-size: 2.5em; /* Adjust header size more */
+  }
+  header {
+    padding: 0.25em;
+  }
+  .hasjs #account p {
+    font-size: 2.5em; /* Adjust login link size */
+  }
+  .hasjs .burger {
+    width: 4em; /* Smaller burger menu */
+  }
+  .hasjs .bar1, .hasjs .bar2, .hasjs .bar3 {
+    height: 0.5em; /* Thinner bars in burger menu */
+  }
+  #toDownload, #windows, #macOS {
+    font-size: 1.5em; /* Smaller text on buttons */
+    padding: 0.5em;
+  }
+  fieldset {
+    padding: 0.5em;
+  }
+  label, input {
+    font-size: 1.5em;
+  }
+  #register {
+    font-size: 1.2em; /* Smaller register button text */
+  }
 }
