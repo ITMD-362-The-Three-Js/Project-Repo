@@ -390,20 +390,41 @@ fieldset h2{
     padding: 0.25em;
   }
   header {
-    height: auto;
     padding: 0.5em;
+    width: 47.5em;
+  }
+  .hasjs .burger{
+    top: -2.5em;
+  }
+  .hasjs .change #pages{
+    top: 6em;
+  }
+  .change #pages li{
+    font-size: 1.3em;
+  }
+  .hasjs .bar1, .hasjs .bar2, .hasjs .bar3{
+    height: 0.5em;
+  }
+  .change .bar1 {
+    transform: translate(0, 0.6em) rotate(-45deg);
   }
   .hasjs #account {
-    width: 100%; /* Full width for smaller screens */
-    position: static;
-    margin-bottom: 1em;
+    left: 38.5em;
+    bottom: 10em;
   }
   #logo {
-    width: 6em; /* Smaller logo */
+    width: 6em; 
+    bottom: 0.5em;
   }
-  .info h1, .info p {
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+  .hasjs .name{
+    left: 4.5em;
+    bottom: 2em;
+  }
+  .info h1{
+    left: 4.5em;
+  }
+  .info p{
+    width: 30em;
   }
   #toDownload, #windows, #macOS {
     width: 80%; /* Larger button for easier click */
@@ -412,6 +433,9 @@ fieldset h2{
   #register {
     width: 50%;
     left: 25%;
+  }
+  input{
+    width: 12em;
   }
 }
 /* Media Queries for Smartphones (Small Devices) */
