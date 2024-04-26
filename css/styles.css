@@ -54,7 +54,9 @@ h1, h2, h3, h4, h5, h6 {
     h1, h2, h3, h4, h5, h6 {
         font-size: 1em;
     }
-
+    label {
+        margin-right: 1em;
+    }
     .Field_Input {
         margin-bottom: 0.375em;
     }
