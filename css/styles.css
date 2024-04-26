@@ -1,6 +1,7 @@
-.audiowide {
-    font-family: "Audiowide", sans-serif;
-  }
+.audiowide{
+  font-family: "Audiowide", 'Trebuchet MS', sans-serif;
+}
+
 /* Global styles */
 body {
     font-family: Arial, sans-serif;
@@ -65,27 +66,521 @@ h1, h2, h3, h4, h5, h6 {
 html{
   background-color: #222426;
 }
+body{
+  font-size: 1.2em;
+}
+h1{
+  padding: 0.25em;
+  color: #0d6ea3;
+  font-size: 4em;
+  padding-bottom: 0.1em;
+}
+p{
+  text-align: center;
+  padding-bottom: 0.5em;
+  color: #fff;
+  font-size: 1.5em;
+}
+li{
+  padding-bottom: 0.5em;
+  color: #fff;
+}
+header{
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  height: 3em;;
+  margin-bottom: 2.5em;;
+}
+/*Making the links a different color so that they know they are links*/
+a{
+  color:#1a828b;
+}
+/*Header */
+/*Logo Customization*/
+#logo{
+  width: 5em;
+  position: relative;
+  left: 5em;
+  bottom: 1em;
+}
+/*NO JS*/
+.burger {
+  width: 0;
+}
+.bar1, .bar2, .bar3{
+  width: 0;
+}
+/*HAS JS*/
+/*h1 in header*/
+.hasjs .name{
+  vertical-align: text-top;
+  width: 60%;
+  position: relative;
+  left: 6em;
+  bottom: 1.75em;
+}
+/*Links to Registration*/
+.hasjs #account p{
+font-size: 1.5em;
+}
+.hasjs #account{
+  width: 20%;
+  position: relative;
+  left: 61em;
+  bottom: 11em;
+}
+/*Moves nav links out of view*/
+.hasjs #pages{
+  transition: none;
+  opacity: 0;
+  position: absolute;
+  top: auto;
+  left: -50%;
+}
+/*The Burger Menu*/
+.hasjs .burger{
+  width: 4em;
+  height: fit-content;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  right: 0.5em;
+  top: -1em;
+  padding-right: 1em;
+}
+/*Bars in the burger*/
+.hasjs .bar1, .hasjs .bar2, .hasjs .bar3{
+  width: 100%;
+  height: 0.5em;
+  background-color: black;
+  margin: 0.7em;
+  transition: 0.4s;
+}
+/*How Bars will look after being clicked*/
+.change .bar1{
+  transform: translate(0, 0.5em) rotate(-45deg);
+}
+.change .bar2{opacity: 0;}
+.change .bar3{
+  transform: translate(0, -1.75em) rotate(45deg);
+}
+/*Naviagtion after burger changed*/
+.hasjs .change #pages{
+  width: 25em;
+  opacity: 100%;
+  left: 0;
+  height: auto;
+  top: 5em;
+  background-color: black;
+  z-index: 100;
+}
+.hasjs #down .change #pages{
+  height: auto;
+}
+#down .change #pages li{
+  padding: 1.75em;
+  font-size: 1.5em;
+}
+.change #pages li{
+  padding: 1em;
+  font-size: 1em;
+}
+/*Code for when mouse is over nav*/
+.change #pages li:hover{
+  background-color:#222426;
+}
+.info{
+  padding-left: 2em;
+}
+/*Centering h1 in index to the middle*/
+.info h1{
+  width: fit-content;
+  position: relative;
+  left: 6.5em;
+}
+.info p{
+  padding-bottom: 1em;
+  padding-top: 0.5em;
+  line-height: 2.25em;
+}
+#downloads{
+  position: relative;
+  bottom: 0.5em;
+}
+.warning h2{
+  width: fit-content;
+  background-color: yellow;
+  margin-bottom: 1em;
+  margin-top: .5em;
+  font-size: 2.25em;
+}
+.warning p{
+  line-height: 2em;
+  margin-bottom: 1.5em;
+}
+/*Code for button in index*/
+#toDownload{
+  color: #fff;
+  background-color: #0d6ea3;
+  border: none;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50px;
+  position: relative;
+  width: 10em;
+  font-size: 2em;
+  left: 14.5em;
+}
+#windows{
+  color: #fff;
+  background-color: #2391cc;
+  border: none;
+  padding: 0.6em;
+  margin-top: 0.6em;
+  margin-bottom: 1.5em;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  border-radius: 25px;
+  position: relative;
+  width: 12.5em;
+  font-size: 2em;
+  left: 5em;
+}
+#macOS{
+  color: #fff;
+  background-color: #738791;
+  border: none;
+  padding: 0.6em;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  border-radius: 25px;
+  position: relative;
+  width: 12.5em;
+  font-size: 2em;
+  left: 20em;
+  bottom: 3.75em;
+}
+#account p{
+  font-size: 2em;
+}
 
+/*Registration Page*/
 fieldset{
   background-color: #2E4760;
+  width: 98%;
+  border-color: #0d6ea3;
+  height: auto;
 }
-
-h1, h2, h3, p, li{
- color:white;
-} 
-
-#sidebar{
-  float: left;
-  width: 20%;
-  padding-top: 1em;
-  padding-right: 0;
-  padding-bottom: 1em;
-  padding-left: 0;
-  background-color: #2E4760;
-  bottom: 100%;
-  margin: 0;
+.Field_Input {
+  margin-top: 2em;
 }
-
-#logo{
-  width: 4em;
+label{
+  font-size: 2.5em;
+  margin-right: .25em;
+}
+input{
+  font-size: 2em;
+  margin-top: 1em;
+  font-family: "Audiowide", sans-serif;
+  color: black;
+}
+fieldset h2{
+  font-size: 3em;
+}
+#email input{
+  position: relative;
+  left: 0.25em;
+}
+#username input{
+  position: relative;
+  left: 3.5em;
+}
+#password input{
+  position: relative;
+  left: 3.5em;
+}
+#checkbox input{
+  height: .75em;
+  width: .75em;
+  margin-right: 0.5em;
+}
+#checkbox label{
+  font-size: 2em;
+}
+/*Button to Register*/
+.newUser{
+  margin-top: 1.5em;
+}
+#register{
+  color: #fff;
+  background-color: #0d6ea3;
+  border: none;
+  padding: 0.75em;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50px;
+  position: relative;
+  width: fit-content;
+  font-size: 1.5em;
+  left: 35%;
+  margin-bottom: 0.5em;
+}
+/*Hover over Buttons*/
+#register:hover, #toDownload:hover{
+  background-color: #094566;
+}
+#macOS:hover{
+  background-color: #404a50;
+}
+#windows:hover{
+  background-color: #144e6d;
+}
+#why{
+  line-height: 1.5em;
+}
+/*Media Quiery for 1024px*/
+@media screen and (max-width: 1024px) {
+  h1{
+    font-size: 3.5em;
+  }
+  p{
+    font-size: 1.5em;
+  }
+  header{
+    height: 5em;
+    width: 52em;
+    margin-bottom: 0.5em;
+  }
+  .hasjs .burger{
+    width: 3em;
+    height: 3.25em;
+    left: 0.5em;
+  }
+  .hasjs .bar1, .hasjs .bar2, .hasjs .bar3{
+    height: 0.45em;
+  }
+  #logo{
+    left: 1.75em;
+    bottom: 0;
+  }
+  .hasjs .name{
+    left: 3.75em;
+    bottom: 1.5em
+  }
+  .hasjs #account{
+    left: 42.5em;
+    bottom: 9em;
+  }
+  .hasjs #account p{
+    font-size: 1.5em;
+  }
+  .info{
+    width: 38em;;
+  }
+  .info h1{
+    width: 60%;
+    position: relative;
+    left: 4em;
+  }
+  .info p{
+    width: 33em;
+  }
+  .hasjs .change #pages{
+    width: 25em;
+    top: 7em;
+  }
+  .change #pages li{
+    font-size: 1.6em;
+  }
+  .change .bar3{
+    transform: translate(0,-1.75em) rotate(45deg);
+  }
+  #toDownload{
+    padding: 0.25em;
+    width:10em;
+    left: 8.55em;
+  }
+  .warning h2{
+    font-size: 2.25em;
+  }
+  .warning p{
+    line-height: 1.5em;
+    margin-bottom: 1em;
+  }
+  #windows, #macOS{
+    padding: 0.5em;
+    width: 12em;
+    left:8.55em
+  }
+  #macOS{
+    top: 0.1em;
+    margin-bottom: 1.5em;
+  }
+  #downloads{
+    margin-top: 0.75em;
+  }
+  #username input{
+    left: 3.55em;
+  }
+  #why{
+    line-height: 1.5em;
+  }
+  #password input{
+    left: 3.55em;
+  }
+  #register{
+    padding: 0.5em;
+    width: 13em;
+  }
+}
+/* Media Queries for Tablets (Medium Devices) */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 1em; /* Smaller text for smaller screens */
+  }
+  h1 {
+    font-size: 3em; /* Adjust header size */
+    padding: 0.25em;
+  }
+  header {
+    padding: 0.5em;
+    width: 47.5em;
+  }
+  .hasjs .burger{
+    top: -2.5em;
+  }
+  .hasjs .change #pages{
+    top: 6em;
+  }
+  .change #pages li{
+    font-size: 1.3em;
+  }
+  .hasjs .bar1, .hasjs .bar2, .hasjs .bar3{
+    height: 0.5em;
+  }
+  .change .bar1 {
+    transform: translate(0, 0.6em) rotate(-45deg);
+  }
+  .hasjs #account {
+    left: 38.5em;
+    bottom: 10em;
+  }
+  #logo {
+    width: 6em; 
+    bottom: 0.5em;
+  }
+  .hasjs .name{
+    left: 4.5em;
+    bottom: 2em;
+  }
+  .info h1{
+    left: 4.5em;
+  }
+  .info p{
+    width: 30em;
+  }
+  #toDownload, #windows, #macOS {
+    width: 80%; /* Larger button for easier click */
+    left: 10%;
+  }
+  #register {
+    width: 50%;
+    left: 25%;
+  }
+  input{
+    width: 12em;
+  }
+}
+/* Media Queries for Smartphones (Small Devices) */
+@media screen and (max-width: 426px) {
+  body {
+    font-size: 0.9em; /* Even smaller text for tiny screens */
+  }
+  h1 {
+    font-size: 2.5em; /* Adjust header size more */
+  }
+  p{
+    font-size: 1.3em;
+  }
+  header {
+    padding: 0.25em;
+    width: 29em;
+  }
+  .hasjs .burger {
+    left: -0.25em;
+    top: -1em;
+  }
+  .hasjs .bar1, .hasjs .bar2, .hasjs .bar3 {
+    height: 0.5em; /* Thinner bars in burger menu */
+  }
+  .hasjs .change #pages{
+    top: 5.5em;
+    width: 18em;
+  }
+  .change #pages li{
+    font-size: 1.21em;
+  }
+  #logo{
+    width: 4.5em;
+    bottom: -0.25em;
+    left: 0.5em;
+  }
+  .hasjs .name{
+    width: 4em;
+    left: 4.15em;
+    z-index: 100;
+  }
+  .hasjs #account{
+    width: 7em;
+    left: 21.75em;
+    bottom: 10.25em;
+  }
+  .hasjs #account p {
+    font-size: 1.5em;
+  }
+  .info h1{
+    left: 2.5em;
+  }
+  .info p{
+    width: 20em;
+    padding-top: 0;
+  }
+  .warning h2{
+    font-size: 1.8em;
+    margin-top: 0;
+  }
+  #toDownload, #windows, #macOS {
+    font-size: 1.5em; /* Smaller text on buttons */
+    padding: 0.5em;
+  }
+  fieldset {
+    padding: 0.5em;
+    width: 95%;
+  }
+  fieldset h2{
+    font-size: 2em;
+  }
+  .Field_Input{
+    margin-top: 0.5em;
+  }
+  label, input {
+    font-size: 1.3em;
+  }
+  #username input, #password input{
+    left: 3em;
+  }
+  #checkbox label{
+    font-size: 1.25em;
+  }
+  #register {
+    font-size: 1em; /* Smaller register button text */
+    padding: 0.75em;
+  }
 }

@@ -3,44 +3,66 @@
   <head>
     <title>Registration</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" media="screen" href="css/meyers_and_normalize-form_reset.css" />
-    <link rel="stylesheet" media="screen" href="css/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" href="css/meyers_and_normalize-form_reset.css">
+    <link rel="stylesheet" media="screen" href="css/styles.css">
+    <script src="javascript/app.js" async></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet"> 
-    <script src="javascript/app.js" async></script>
   </head>
   <body class="audiowide">
     <header>
-      <div class="logo">
-        <a href="index.html"><img src="CELogo.png" alt="Logo for Cheat Engine"></a>
+      <!-- Got the burger menu from W3Schools -->
+      <div class="burger">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
       </div>
-      <h1>Registration</h1>
-    </header>    
+      <a href="index.html"><img src="CELogo.png" alt="Logo for Cheat Engine" id="logo"></a>
+      <div class="burgered">
+        <nav id="pages">
+          <ul>
+            <li>Forum</li>
+            <li>About Cheat Engine</li>
+            <li>About DBVM</li>
+            <li>Bugtracker</li>
+            <li><a href="downloads.html">Downloads</a></li>
+            <li>Tutorials</li>
+            <li>GIT</li>
+            <li>Lua Extensions</li>
+            <li>Twitter</li>
+            <li>FAQ</li>
+            <li>Contribute</li>
+            <li>Cheat Engine Wiki</li>
+          </ul>
+        </nav>
+      </div>
+      <h1 class="name">Cheat Engine</h1>
+    </header>
+    <p id="why">Stay informed about the newest version of the CheatEngine software and get notified about any updates made to the forum! Join now and you can also contribute to the public threads! </p>  
     <fieldset>
       <form action="#" method="post" autocomplete="on">
         <h2>Register</h2>
-        <div class="Field_Input">
+        <div class="Field_Input" id="email">
           <label>E-mail address&#58;</label>
+          <input type="email" name="text_field" placeholder="johndoe123@gmail.com" required>
+        </div>
+        <div class="Field_Input" id="username">
+          <label>Username&#58;</label>
           <input type="text" name="text_field" placeholder="CheatEnthusiast" required>
         </div>
-        <div class="Field_Input">
-          <label>Username&#58;</label>
-          <input type="text" name="text_field" placeholder="johndoe123@hotmail.com" required>
-        </div>
-        <div class="Field_Input">
+        <div class="Field_Input" id="password">
           <label>Password&#58;</label>
           <input type="text" name="text_field" placeholder="Apples&Bananas300" required>
         </div>
-        <div class="Field_Input">
-          <label>Confirm Password&#58;</label>
-          <input type="text" name="text_field" placeholder="Apples&Bananas300" required>
-        </div>
-        <div class="Field_Input">
+        <div class="Field_Input" id="checkbox">
           <input type="checkbox" id="terms" value="ToS" required>
-          <label>By clicking the checkbox you are agreen to the terms of service</label>
+          <label>By clicking the checkbox you are agreeing to the terms of service</label>
         </div>
-        <input type="submit" name="register" value="register">
+        <div class="newUser">
+          <button class="audiowide" id="register">Join the CE Community</button>
+        </div>
       </form>
     </fieldset>
   </body>
