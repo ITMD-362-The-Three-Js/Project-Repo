@@ -573,9 +573,14 @@ fieldset h2{
   label, input {
     font-size: 1.3em;
   }
- /* #username input, #password input{
-    left: 1.5em;
-  }*/
+  #email input{
+    position: relative;
+    left: 0.5em;
+  }
+  #username input, #password input{
+    position: relative;
+    left: 0.5em;
+  }
   #checkbox label{
     font-size: 1.25em;
   }
